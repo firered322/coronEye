@@ -2,15 +2,20 @@ const path = require("path");
 
 const express = require("express");
 const rp = require("request-promise");
-const ejs = require('ejs')
+const ejs = require("ejs");
 
 const app = express();
 
-app.use("/public", express.static(path.join(__dirname, "public")));
+// app.use("/public", express.static(path.join(__dirname, "public")));
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 const PORT = 8887;
+
+app.get("/", (req, res) => {
+  res.render("pages/index");
+});
+
 
 app.get("/:country", async (req, res) => {
   const countryName = req.params.country;
@@ -33,9 +38,7 @@ app.get("/:country", async (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'home.html'));
-});
+
 
 app.listen(PORT, () => {
   console.log(`Running at ${PORT}`);
