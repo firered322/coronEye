@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head')-%>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header') -%>
+    </header>
+
+    <main>
+        <div class="text-center">
+            <div class="card" style="width: 50%; background-color: #570869; color: white">
+                <div class="card-body text-center">
+                    <h3 class="card-title"><%= country[0].Country %></h3>
+                    <h4 class="card-text">Total confirmed cases: <%= country[0].TotalConfirmed %></h4>
+                    <h4 class="card-text">Today's confirmed cases: <%= country[0].NewConfirmed %></h4>
+                    <h4 class="card-text">Total recovered: <%= country[0].TotalRecovered %></h4>
+                    <h4 class="card-text">Today's recovered: <%= country[0].NewRecovered %></h4>
+                    <h4 class="card-text">Total fatalities: <%= country[0].TotalDeaths %></h4>
+                    <h4 class="card-text">Today's deaths: <%= country[0].NewDeaths %></h4>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <%- include('../partials/footer') -%>
+    </footer>
+
+</body>
+
+</html>
