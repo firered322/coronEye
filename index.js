@@ -2,7 +2,6 @@ const path = require("path");
 
 const express = require("express");
 const rp = require("request-promise");
-const ejs = require("ejs");
 
 const app = express();
 
@@ -89,7 +88,6 @@ app.post("/countries", async (req, res) => {
     });
     console.log(countryDetails)
     res.render("pages/countrySummary", { country: countryDetails });
-    // res.send(countryDetails)
   }
 });
 
