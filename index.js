@@ -86,11 +86,14 @@ app.post("/countries", async (req, res) => {
     countryDetails = response["Countries"].filter(item => {
       return item["Country"] == countryName;
     });
-    console.log(countryDetails)
+    console.log(countryDetails);
     res.render("pages/countrySummary", { country: countryDetails });
   }
 });
 
+app.get("/learn", (req, res) => {
+  res.render("pages/learn");
+});
 app.listen(PORT, () => {
   console.log(`Running at ${PORT}`);
 });
