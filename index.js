@@ -94,6 +94,6 @@ app.post("/countries", async (req, res) => {
 app.get("/learn", (req, res) => {
   res.render("pages/learn");
 });
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Running at ${PORT}`);
 });
