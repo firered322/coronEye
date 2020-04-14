@@ -1,17 +1,20 @@
-.container {
+.card-container {
   margin: 50px 0;
+  width: 85%;
 }
 
 .card {
-  margin: 0 2% !important;
+  margin: 2% 2% !important;
 }
 
 .confirmed {
-  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+  background-color: red;
+  border-bottom: 5px solid rgba(0, 0, 255, 1);
+  
 }
 .recovered {
-  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+  border-bottom: 5px solid rgba(0, 255, 0, 1);
 }
 .deaths {
-  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+  border-bottom: 5px solid rgba(255, 0, 0, 1);
 }

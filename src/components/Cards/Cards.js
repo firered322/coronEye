@@ -6,12 +6,11 @@ import "./Cards.css";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 
 const Cards = (props) => {
-  console.log(props);
   if (!props.data.confirmed) {
     return "Loading";
   }
   return (
-    <div className="container">
+    <div className="card-container">
       <Grid container spacing={3} justify="center">
         <Grid item component={Card} xs={12} md={3} className="card confirmed">
           <CardContent>
@@ -27,7 +26,7 @@ const Cards = (props) => {
               />
             </Typography>
             <Typography color="textSecondary">{new Date(props.data.lastUpdate).toDateString()}</Typography>
-            <Typography variant="body2">Number of active cases</Typography>
+            <Typography variant="body2">Number of active cases of COVID-19</Typography>
           </CardContent>
         </Grid>
         <Grid item component={Card} xs={12} md={3} className="card recovered">
@@ -57,7 +56,7 @@ const Cards = (props) => {
               separator=","
               /></Typography>
             <Typography color="textSecondary">{new Date(props.data.lastUpdate).toDateString()}</Typography>
-            <Typography variant="body2">Total Deaths</Typography>
+            <Typography variant="body2">Total Deaths from COVID-19</Typography>
           </CardContent>
         </Grid>
       </Grid>
