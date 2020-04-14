@@ -17,16 +17,21 @@ const CountryPicker = (props) => {
 
   return (
     <FormControl className="cp-formControl">
-      <NativeSelect
-        defaultValue=""
-        onChange={(e) => props.handleCountryChange(e.target.value)}
-      >
-        {countries.map((country, i) => (
+      <div class="input-group mb-5">
+        <select class="custom-select" id="selector" onChange={(e) => props.handleCountryChange(e.target.value)} defaultValue="">
+          {countries.map((country, i) => (
           <option key={i} value={country}>
             {country}
           </option>
         ))}
-      </NativeSelect>
+        </select>
+        <div class="input-group-append">
+          <label class="input-group-text" for="selector">
+            Select Country
+          </label>
+        </div>
+      </div>
+
     </FormControl>
   );
 };

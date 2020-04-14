@@ -25,7 +25,7 @@ const Cards = (props) => {
               separator=","
               />
             </Typography>
-            <Typography color="textSecondary">{new Date(props.data.lastUpdate).toDateString()}</Typography>
+            <Typography color="textSecondary">Last updated: {new Date(props.data.lastUpdate).toDateString()}</Typography>
             <Typography variant="body2">Number of active cases of COVID-19</Typography>
           </CardContent>
         </Grid>
@@ -40,8 +40,8 @@ const Cards = (props) => {
               duration={1}
               separator=","
               /></Typography>
-            <Typography color="textSecondary">{new Date(props.data.lastUpdate).toDateString()}</Typography>
-            <Typography variant="body2">Total Recoveries</Typography>
+            <Typography color="textSecondary">Last updated: {new Date(props.data.lastUpdate).toDateString()}</Typography>
+            <Typography variant="body2">Total recoveries made</Typography>
           </CardContent>
         </Grid>
         <Grid item component={Card} xs={12} md={3} className="card deaths">
@@ -55,8 +55,8 @@ const Cards = (props) => {
               duration={1}
               separator=","
               /></Typography>
-            <Typography color="textSecondary">{new Date(props.data.lastUpdate).toDateString()}</Typography>
-            <Typography variant="body2">Total Deaths from COVID-19</Typography>
+            <Typography color="textSecondary">Last updated: {new Date(props.data.lastUpdate).toDateString()}</Typography>
+            <Typography variant="body2">Total deaths from COVID-19</Typography>
           </CardContent>
         </Grid>
       </Grid>
