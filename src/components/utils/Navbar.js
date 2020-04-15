@@ -1,4 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import "./Navbar.css";
+import flag from "./flag.svg";
 
 class Navbar extends React.Component {
   render() {
@@ -7,9 +11,12 @@ class Navbar extends React.Component {
         className="navbar navbar-expand-lg navbar-dark"
         style={{ backgroundColor: "rgba(87,8,105, 0.8)" }}
       >
-        <a className="navbar-brand ml-5" href="/">
-          CoronEye
-        </a>
+        <Link to="/">
+          <a className="navbar-brand ml-5" href="/">
+            CoronEye
+          </a>
+        </Link>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -21,19 +28,21 @@ class Navbar extends React.Component {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto mr-5">
             <li className="nav-item">
-              <a className="nav-link" href="/countries">
-                Global Stats
-              </a>
+              <Link to="/india">
+                <a className="nav-link" href="/">
+                  <div className="india">
+                    <img src={flag} alt="logo" />
+                    <p className="nav-options india">India</p>
+                  </div>
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link mr-auto" href="/learn">
-                Learn
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link mr-auto" href="#">
-                News
-              </a>
+              <Link to="/learn">
+                <a className="nav-link" href="/">
+                  <p className="nav-options ">Learn</p>
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

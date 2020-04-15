@@ -2,7 +2,9 @@ body {
   background-color: #e7e7e7;
   color: black;
 }
-
+p{
+  margin: 0
+}
 .container {
   display: flex;
   align-items: center;
