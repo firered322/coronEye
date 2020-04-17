@@ -1,9 +1,9 @@
 import React from "react";
 import CountUp from "react-countup";
 
-import "./Cards.css";
-
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
+
+import "./Cards.css";
 
 const Cards = (props) => {
   if (!props.data.confirmed) {

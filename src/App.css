@@ -11,3 +11,7 @@ p{
   justify-content: center;
   flex-direction: column;
 }
+.pageHead{
+  font-family: 'Manrope', sans-serif;
+  font-size:30px;
+}
