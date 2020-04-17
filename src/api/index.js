@@ -49,3 +49,14 @@ export const getCountries = async () => {
     console.error(error.message);
   }
 };
+
+export const getStatesData = async () => {
+  try {
+    const {
+      data: { statewise },
+    } = await axios.get(stateWiseURL);
+    console.log(statewise);
+  } catch (error) {
+    console.error(error.message);
+  }
+};

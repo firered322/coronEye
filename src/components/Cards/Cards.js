@@ -1,5 +1,5 @@
 import React from "react";
-import CountUp from 'react-countup'
+import CountUp from "react-countup";
 
 import "./Cards.css";
 
@@ -18,15 +18,17 @@ const Cards = (props) => {
               Infected
             </Typography>
             <Typography variant="h5">
-              <CountUp 
-              start={0}
-              end={props.data.confirmed.value}
-              duration={1}
-              separator=","
+              <CountUp
+                start={0}
+                end={props.data.confirmed.value}
+                duration={1}
+                separator=","
               />
             </Typography>
-            <Typography color="textSecondary">Last updated: {new Date(props.data.lastUpdate).toDateString()}</Typography>
-            <Typography variant="body2">Number of active cases of COVID-19</Typography>
+            <Typography color="textSecondary">
+              Last updated: {new Date(props.data.lastUpdate).toDateString()}
+            </Typography>
+            <Typography variant="body2">Active COVID-19 cases</Typography>
           </CardContent>
         </Grid>
         <Grid item component={Card} xs={12} md={3} className="card recovered">
@@ -34,13 +36,17 @@ const Cards = (props) => {
             <Typography color="textSecondary" gutterBottom>
               Recovered
             </Typography>
-            <Typography variant="h5"><CountUp 
-              start={0}
-              end={props.data.recovered.value}
-              duration={1}
-              separator=","
-              /></Typography>
-            <Typography color="textSecondary">Last updated: {new Date(props.data.lastUpdate).toDateString()}</Typography>
+            <Typography variant="h5">
+              <CountUp
+                start={0}
+                end={props.data.recovered.value}
+                duration={1}
+                separator=","
+              />
+            </Typography>
+            <Typography color="textSecondary">
+              Last updated: {new Date(props.data.lastUpdate).toDateString()}
+            </Typography>
             <Typography variant="body2">Total recoveries made</Typography>
           </CardContent>
         </Grid>
@@ -49,13 +55,17 @@ const Cards = (props) => {
             <Typography color="textSecondary" gutterBottom>
               Deaths
             </Typography>
-            <Typography variant="h5"><CountUp 
-              start={0}
-              end={props.data.deaths.value}
-              duration={1}
-              separator=","
-              /></Typography>
-            <Typography color="textSecondary">Last updated: {new Date(props.data.lastUpdate).toDateString()}</Typography>
+            <Typography variant="h5">
+              <CountUp
+                start={0}
+                end={props.data.deaths.value}
+                duration={1}
+                separator=","
+              />
+            </Typography>
+            <Typography color="textSecondary">
+              Last updated: {new Date(props.data.lastUpdate).toDateString()}
+            </Typography>
             <Typography variant="body2">Total deaths from COVID-19</Typography>
           </CardContent>
         </Grid>
