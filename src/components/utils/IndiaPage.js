@@ -1,6 +1,7 @@
 import React from "react";
 
 import India from "../India/India";
+import StatePicker from "../StatePicker/StatePicker";
 
 import { getStatesData } from "../../api";
 
@@ -11,7 +12,6 @@ class IndiaPage extends React.Component {
 
   async componentDidMount() {
     const statesData = await getStatesData();
-    // console.log(statesData);
     this.setState({ data: statesData });
   }
   render() {
@@ -20,6 +20,7 @@ class IndiaPage extends React.Component {
       <div className="container ">
         <p className="pageHead">India Statistics</p>
         <India total={data} />
+        <StatePicker />
       </div>
     );
   }

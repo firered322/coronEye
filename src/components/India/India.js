@@ -26,7 +26,7 @@ const India = (props) => {
                 />
               </Typography>
               <Typography color="textSecondary">
-                {/* Last updated: {new Date(props.data.lastUpdate).toDateString()} */}
+                Last updated: {props.total.statewise[0].lastupdatedtime}
               </Typography>
               <Typography variant="body2">Active COVID-19 cases</Typography>
             </CardContent>
@@ -45,7 +45,7 @@ const India = (props) => {
                 />
               </Typography>
               <Typography color="textSecondary">
-                {/* Last updated: {new Date(props.data.lastUpdate).toDateString()} */}
+                Last updated: {props.total.statewise[0].lastupdatedtime}
               </Typography>
               <Typography variant="body2">Total recoveries made</Typography>
             </CardContent>
@@ -64,7 +64,7 @@ const India = (props) => {
                 />
               </Typography>
               <Typography color="textSecondary">
-                {/* Last updated: {new Date(props.data.lastUpdate).toDateString()} */}
+                Last updated: {props.total.statewise[0].lastupdatedtime}
               </Typography>
               <Typography variant="body2">
                 Total deaths from COVID-19
@@ -73,6 +73,7 @@ const India = (props) => {
           </Grid>
         </Grid>
       </div>
+      
     </div>
   );
 };
