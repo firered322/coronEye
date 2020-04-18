@@ -10,7 +10,6 @@ const StateDailyChart = () => {
   useEffect(() => {
     const fetchStatesTimeData = async () => {
       const fetchedDailyData = await dailyStateData();
-      console.log(fetchedDailyData);
       setDailyStateData(fetchedDailyData);
     };
     fetchStatesTimeData();
