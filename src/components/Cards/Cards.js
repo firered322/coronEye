@@ -28,7 +28,7 @@ const Cards = (props) => {
             <Typography color="textSecondary">
               Last updated: {new Date(props.data.lastUpdate).toDateString()}
             </Typography>
-            <Typography variant="body2">Active COVID-19 cases</Typography>
+            <Typography variant="body2">Total COVID-19 cases</Typography>
           </CardContent>
         </Grid>
         <Grid item component={Card} xs={12} md={3} className="card recovered">

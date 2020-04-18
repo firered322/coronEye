@@ -28,7 +28,7 @@ const India = (props) => {
               <Typography color="textSecondary">
                 Last updated: {props.total.statewise[0].lastupdatedtime}
               </Typography>
-              <Typography variant="body2">Active COVID-19 cases</Typography>
+              <Typography variant="body2">Total COVID-19 cases</Typography>
             </CardContent>
           </Grid>
           <Grid item component={Card} xs={12} md={3} className="card recovered">
