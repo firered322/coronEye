@@ -50,10 +50,20 @@ export const getCountries = async () => {
   }
 };
 
-export const getStatesData = async () => {
+export const getStatesData = async (stateName) => {
+  if (stateName) {
+    try {
+      let { data } = await axios.get(stateWiseURL);
+      let statesArray = data["statewise"];
+      let stateInfo = statesArray.filter((s) => s.state === stateName);
+      return stateInfo;
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
   try {
     const { data } = await axios.get(stateWiseURL);
-    return data;  
+    return data;
   } catch (error) {
     console.error(error.message);
   }
