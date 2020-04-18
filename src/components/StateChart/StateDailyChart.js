@@ -45,7 +45,13 @@ const StateDailyChart = () => {
       />
     ) : null;
 
-  return <div className="chart-container">{dailyState.length ? lineChart : null}</div>;
+  return (
+    <div className="chart-container">
+      {dailyState.length ? lineChart : null}
+      <br />
+      <p className="text-center text-danger specialPhone">Please turn your device in Landscape orientation to see the plot better</p>
+    </div>
+  );
 };
 
 export default StateDailyChart;

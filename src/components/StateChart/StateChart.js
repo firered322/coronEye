@@ -49,15 +49,15 @@ const StateChart = (props) => {
                   <div className="legend-sep">
                     <div className="flexer-t">
                       <span className="pc-total"></span>
-                      <p> : Total Cases</p>
+                      <p> Active Cases: {props.state.active}</p>
                     </div>
                     <div className="flexer-r">
                       <span className="pc-recovered"></span>
-                      <p> : Total Recovered</p>
+                      <p> Total Recovered: {props.state.recovered}</p>
                     </div>
                     <div className="flexer-d">
                       <span className="pc-deaths"></span>
-                      <p> : Total Deaths</p>
+                      <p> Total Deaths: {props.state.deaths}</p>
                     </div>
                   </div>
                 </Typography>
