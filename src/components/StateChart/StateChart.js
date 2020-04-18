@@ -45,7 +45,6 @@ const StateChart = (props) => {
                   Chart Legends
                 </Typography>
                 <hr />
-
                 <Typography variant="body2" component="p">
                   <div className="legend-sep">
                     <div className="flexer-t">

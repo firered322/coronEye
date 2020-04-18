@@ -68,3 +68,13 @@ export const getStatesData = async (stateName) => {
     console.error(error.message);
   }
 };
+
+export const dailyStateData = async () => {
+  try {
+    let { data } = await axios.get(stateWiseURL);
+    let dailyDataArr = data["cases_time_series"];
+    return dailyDataArr;
+  } catch (error) {
+    console.error(error.message);
+  }
+};

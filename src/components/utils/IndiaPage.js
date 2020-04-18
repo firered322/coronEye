@@ -2,6 +2,7 @@ import React from "react";
 
 import India from "../India/India";
 import StatePicker from "../StatePicker/StatePicker";
+import StateDailyChart from "../StateChart/StateDailyChart";
 import StateChart from "../StateChart/StateChart";
 
 import { getStatesData } from "../../api";
@@ -14,7 +15,6 @@ class IndiaPage extends React.Component {
 
   handleStateChange = async (state) => {
     const statesData = await getStatesData(state);
-    console.log(statesData);
     this.setState({ stateInd: statesData[0] });
   };
 
@@ -28,6 +28,8 @@ class IndiaPage extends React.Component {
       <div className="container ">
         <p className="pageHead">India Statistics</p>
         <India total={data} />
+        <StateDailyChart />
+        <br />
         <StatePicker handleStateChange={this.handleStateChange} />
         <StateChart state={stateInd} />
       </div>
