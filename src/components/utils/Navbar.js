@@ -9,7 +9,7 @@ class Navbar extends React.Component {
     return (
       <nav
         className="navbar navbar-expand-lg navbar-dark"
-        style={{ backgroundColor: "rgba(87,8,105, 0.8)" }}
+        style={{ backgroundColor: "rgba(0,0,70, 0.9)" }}
       >
         <Link to="/">
           <a className="navbar-brand ml-5" href="/">

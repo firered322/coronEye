@@ -8,13 +8,12 @@
 }
 
 .confirmed {
-  background-color: red;
-  border-bottom: 5px solid rgba(0, 0, 255, 1);
+  background-image: linear-gradient(to right, rgba(0,180,219, 0.8), rgba(0,180,219, 0.7));
   
 }
 .recovered {
-  border-bottom: 5px solid rgba(0, 255, 0, 1);
+  background-image: linear-gradient(to right, rgba(107,229,133, 0.8), rgba(107,229,133, 0.7));
 }
 .deaths {
-  border-bottom: 5px solid rgba(255, 0, 0, 1);
+  background-image: linear-gradient(to right, rgba(237,33,58, 0.8), rgba(237,33,58, 0.7));
 }
