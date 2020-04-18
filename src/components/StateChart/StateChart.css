@@ -1,0 +1,54 @@
+.state-chart-container {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+.state-chart {
+  width: 100%;
+  margin: 0 0 2% 0;
+}
+.state-chart-data {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2% 0;
+}
+.legend-sep {
+  display: flex;
+  flex-direction: column;
+}
+.pc-total {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 255, 0.7);
+  display: inline-block;
+}
+
+.pc-recovered {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 255, 0, 0.7);
+  display: inline-block;
+}
+
+.pc-deaths {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 0, 0, 0.7);
+  display: inline-block;
+}
+
+.flexer-t {
+  display: flex;
+  font-size: 14px;
+  margin: 0 0 5px 5px;
+}
+.flexer-r {
+  display: flex;
+  font-size: 14px;
+  margin: 5px 0 5px 5px;
+}
+.flexer-d {
+  display: flex;
+  font-size: 14px;
+  margin: 5px 0 5px 5px;
+}
