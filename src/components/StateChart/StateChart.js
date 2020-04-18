@@ -8,16 +8,16 @@ const StateChart = (props) => {
   const pieChart = (
     <Pie
       data={{
-        labels: ["Infected", "Recovered", "Deaths"],
+        labels: ["Active", "Recovered", "Deaths"],
         datasets: [
           {
             backgroundColor: [
-              "rgba(0, 0, 255, 0.7)",
-              "rgba(0, 255, 0, 0.7)",
-              "rgba(255, 0, 0, 0.7)",
+              "rgba(0,180,219, 1)",
+              "rgba(107,229,133, 1)",
+              "rgba(237,33,58, 1)",
             ],
             data: [
-              props.state.confirmed,
+              props.state.active,
               props.state.recovered,
               props.state.deaths,
             ],
@@ -31,7 +31,7 @@ const StateChart = (props) => {
     ></Pie>
   );
 
-  return props.state.confirmed ? (
+  return props.state.active ? (
     <div className="row state-chart-container">
       <div className="col-lg-9">
         <div className="state-chart">{pieChart}</div>

@@ -19,21 +19,21 @@
 .pc-total {
   width: 20px;
   height: 20px;
-  background-color: rgba(0, 0, 255, 0.7);
+  background-color: rgba(0, 180, 219, 1);
   display: inline-block;
 }
 
 .pc-recovered {
   width: 20px;
   height: 20px;
-  background-color: rgba(0, 255, 0, 0.7);
+  background-color: rgba(107, 229, 133, 1);
   display: inline-block;
 }
 
 .pc-deaths {
   width: 20px;
   height: 20px;
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(237, 33, 58, 1);
   display: inline-block;
 }
 
