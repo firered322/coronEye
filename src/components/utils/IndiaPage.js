@@ -26,10 +26,9 @@ class IndiaPage extends React.Component {
     const { data, stateInd } = this.state;
     return (
       <div className="container ">
-        <p className="pageHead">India Statistics</p>
+        <h2>India Statistics</h2>
         <India total={data} />
         <StateDailyChart />
-        <br />
         <StatePicker handleStateChange={this.handleStateChange} />
         <StateChart state={stateInd} />
       </div>

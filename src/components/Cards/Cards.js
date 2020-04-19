@@ -14,9 +14,9 @@ const Cards = (props) => {
       <Grid container spacing={3} justify="center">
         <Grid item component={Card} xs={12} md={3} className="card confirmed">
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <h3 color="textSecondary" gutterBottom>
               Infected
-            </Typography>
+            </h3>
             <Typography variant="h5">
               <CountUp
                 start={0}
@@ -33,9 +33,9 @@ const Cards = (props) => {
         </Grid>
         <Grid item component={Card} xs={12} md={3} className="card recovered">
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <h3 color="textSecondary" gutterBottom>
               Recovered
-            </Typography>
+            </h3>
             <Typography variant="h5">
               <CountUp
                 start={0}
@@ -52,9 +52,9 @@ const Cards = (props) => {
         </Grid>
         <Grid item component={Card} xs={12} md={3} className="card deaths">
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
-              Deaths
-            </Typography>
+            <h3 color="textSecondary" gutterBottom>
+              Deceased
+            </h3>
             <Typography variant="h5">
               <CountUp
                 start={0}

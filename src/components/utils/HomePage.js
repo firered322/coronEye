@@ -26,7 +26,7 @@ class HomePage extends React.Component {
 
     return (
       <div className="container ">
-        <p className="pageHead">Global Statistics</p>
+        <h2>Global Statistics</h2>
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />

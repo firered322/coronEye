@@ -1,0 +1,40 @@
+.learnBox {
+  margin: 0 12%;
+}
+
+.learn-head {
+  font-size: 2vw;
+}
+.learn-body {
+  font-size: 1.2vw;
+  margin-bottom: 10px;
+}
+.learn-subhead {
+  font-size: 1.5vw;
+  margin-bottom: 10px;
+}
+.learn-subbody {
+  font-size: 1.2vw;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  .learnBox {
+    margin: 0 5%;
+  }
+  .learn-head {
+    font-size: 25px;
+  }
+  .learn-subhead {
+    font-size: 21px;
+  }
+  .learn-body {
+    font-size: 19px;
+  }
+  .learn-subbody {
+    font-size: 19px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }
+}

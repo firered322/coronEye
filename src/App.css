@@ -1,6 +1,7 @@
 body {
   background-color: #DBE6F6;
   color: black;
+  font-family: 'Roboto Mono', monospace;
 }
 p{
   margin: 0
@@ -10,8 +11,4 @@ p{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.pageHead{
-  font-family: 'Manrope', sans-serif;
-  font-size:30px;
 }

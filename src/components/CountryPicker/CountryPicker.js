@@ -17,7 +17,7 @@ const CountryPicker = (props) => {
 
   return (
     <FormControl className="cp-formControl">
-      <div className="input-group mb-5">
+      <div className="input-group mb-3">
         <select className="custom-select" id="selector" onChange={(e) => props.handleCountryChange(e.target.value)} defaultValue="">
           {countries.map((country, i) => (
           <option key={i} value={country}>
