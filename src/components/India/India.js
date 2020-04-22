@@ -14,9 +14,9 @@ const India = (props) => {
         <Grid container spacing={3} justify="center">
           <Grid item component={Card} xs={12} md={3} className="card confirmed">
             <CardContent>
-              <Typography color="textSecondary" gutterBottom>
+              <h3 color="textSecondary" gutterBottom>
                 Infected
-              </Typography>
+              </h3>
               <Typography variant="h5">
                 <CountUp
                   start={0}
@@ -28,14 +28,17 @@ const India = (props) => {
               <Typography color="textSecondary">
                 Last updated: {props.total.statewise[0].lastupdatedtime}
               </Typography>
-              <Typography variant="body2">Total COVID-19 cases</Typography>
+              <Typography variant="body1">
+                New cases reported today:{" "}
+                {props.total.statewise[0].deltaconfirmed}
+              </Typography>
             </CardContent>
           </Grid>
           <Grid item component={Card} xs={12} md={3} className="card recovered">
             <CardContent>
-              <Typography color="textSecondary" gutterBottom>
+              <h3 color="textSecondary" gutterBottom>
                 Recovered
-              </Typography>
+              </h3>
               <Typography variant="h5">
                 <CountUp
                   start={0}
@@ -47,14 +50,17 @@ const India = (props) => {
               <Typography color="textSecondary">
                 Last updated: {props.total.statewise[0].lastupdatedtime}
               </Typography>
-              <Typography variant="body2">Total recoveries made</Typography>
+              <Typography variant="body1">
+                New recoveries made today:{" "}
+                {props.total.statewise[0].deltarecovered}
+              </Typography>
             </CardContent>
           </Grid>
           <Grid item component={Card} xs={12} md={3} className="card deaths">
             <CardContent>
-              <Typography color="textSecondary" gutterBottom>
-                Deaths
-              </Typography>
+              <h3 color="textSecondary" gutterBottom>
+                Deceased
+              </h3>
               <Typography variant="h5">
                 <CountUp
                   start={0}
@@ -66,14 +72,13 @@ const India = (props) => {
               <Typography color="textSecondary">
                 Last updated: {props.total.statewise[0].lastupdatedtime}
               </Typography>
-              <Typography variant="body2">
-                Total deaths from COVID-19
+              <Typography variant="body1">
+                Deaths today: {props.total.statewise[0].deltadeaths}
               </Typography>
             </CardContent>
           </Grid>
         </Grid>
       </div>
-      
     </div>
   );
 };

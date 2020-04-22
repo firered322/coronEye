@@ -4,10 +4,10 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 
 import HomePage from "./components/utils/HomePage";
-import IndiaPage from "./components/utils/IndiaPage"
-// import India from "./components/India/India";
+import IndiaPage from "./components/utils/IndiaPage";
 import Learn from "./components/Learn/Learn";
 import Navbar from "./components/utils/Navbar";
+import Footer from "./components/utils/Footer";
 
 class App extends React.Component {
   render() {
@@ -20,6 +20,7 @@ class App extends React.Component {
             <Route path="/india" component={IndiaPage} />
             <Route path="/learn" component={Learn} />
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
     );

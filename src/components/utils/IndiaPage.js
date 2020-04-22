@@ -20,7 +20,7 @@ class IndiaPage extends React.Component {
 
   async componentDidMount() {
     const statesData = await getStatesData();
-    this.setState({ data: statesData });
+    this.setState({ data: statesData, stateInd: statesData['statewise'][1] });
   }
   render() {
     const { data, stateInd } = this.state;

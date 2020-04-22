@@ -12,3 +12,7 @@ p{
   justify-content: center;
   flex-direction: column;
 }
+
+.foot-ce{
+  margin: 5px 0;
+}
