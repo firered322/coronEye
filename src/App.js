@@ -6,19 +6,21 @@ import "./App.css";
 import HomePage from "./components/utils/HomePage";
 import IndiaPage from "./components/utils/IndiaPage";
 import Learn from "./components/Learn/Learn";
-import Navbar from "./components/utils/Navbar";
+import Navbara from "./components/utils/Navbar";
 import Footer from "./components/utils/Footer";
+import Zones from "./components/utils/Zones";
 
 class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
         <div>
-          <Navbar />
+          <Navbara />
           <div className="container">
             <Route path="/" exact component={HomePage} />
             <Route path="/india" component={IndiaPage} />
             <Route path="/learn" component={Learn} />
+            <Route path="/zones" component={Zones} />
           </div>
           <Footer />
         </div>
